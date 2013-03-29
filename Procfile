@@ -1,0 +1,1 @@
+web: gunicorn ribbit.wsgi; python ribbit_app/manage.py collectstatic --noinput
