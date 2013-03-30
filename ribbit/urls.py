@@ -1,5 +1,4 @@
 from django.conf.urls import patterns, include, url
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -17,4 +16,6 @@ urlpatterns = patterns('',
     url(r'^signup$', 'ribbit_app.views.signup'), # signup
 )  
 
-urlpatterns += staticfiles_urlpatterns()
+urlpatterns += patterns('django.contrib.staticfiles.views',
+    url(r'^static/(?P<path>.*)$', 'serve'),
+)
