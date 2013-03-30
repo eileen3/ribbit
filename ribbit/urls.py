@@ -14,5 +14,5 @@ urlpatterns = patterns('',
     url(r'^users/(?P<username>\w{0,30})/$', 'ribbit_app.views.users'),
     url(r'^follow$', 'ribbit_app.views.follow'), # follow
     url(r'^signup$', 'ribbit_app.views.signup'), # signup
-    url(r'^static/(?P.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
+    url(r'^static/(?P.*)$', 'django.views.static.serve', {'ribbit': settings.STATIC_ROOT}),
 )  
