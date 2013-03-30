@@ -4,7 +4,7 @@ LOGIN_URL = '/'
 
 # Django settings for ribbit project.
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
